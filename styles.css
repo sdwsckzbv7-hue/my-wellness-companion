@@ -67,3 +67,11 @@ html.dark .bottom-nav{background:#2b202f;border-color:#4d384d}html.dark .bottom-
 @media(max-width:920px){.period-grid{grid-template-columns:1fr}}
 @media(max-width:800px){.bottom-nav{background:#fffafd;border-color:#f0e3ef}.bottom-nav button.active{color:#914c90}.meal-board{grid-template-columns:1fr}.period-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:570px){.period-grid{grid-template-columns:1fr}.quick-check-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.meal-card{padding:17px}.meal-input-row{grid-template-columns:1fr 1fr}.weekday-activity{flex-wrap:wrap}.weekday-activity .btn{padding:8px 10px}.hero-copy{max-width:82%}}
+
+/* Notification centre */
+.reminder-status{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.reminder-status strong{font-size:15px;color:var(--dark)}
+.reminder-banner{align-items:center;flex-wrap:wrap}
+.reminder-banner .card-caption{flex:1;min-width:210px}
+[data-notif-category],[data-notif-private]{accent-color:var(--dark);width:21px;height:21px;flex-shrink:0}
+@media(max-width:570px){.reminder-banner{align-items:flex-start}.reminder-status{align-items:flex-start}.reminder-status .pill{margin-top:2px}}
