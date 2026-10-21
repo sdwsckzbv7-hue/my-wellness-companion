@@ -5,3 +5,65 @@
 @media(max-width:450px){.main{padding-left:14px;padding-right:14px}.card{padding:17px;border-radius:18px}.page-title{font-size:28px}.stat{padding:14px}.stat strong{font-size:25px}.hero{padding:20px}.hero h2{font-size:23px}.hero-copy{max-width:82%}.hero:after{font-size:72px;right:12px;top:65px}.grid-2{grid-template-columns:1fr}.grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}.modal-wrap{padding:9px;align-items:flex-end}.modal{max-height:94dvh;border-radius:24px 24px 0 0;padding:20px}.form-grid{grid-template-columns:1fr}.day-pills{gap:4px}.day-btn{padding:9px 1px}.chat-list{padding:15px}.bubble{max-width:93%}.floating-chat{display:none}}
 /* Generic app additions */
 .notice{background:#f1f7f2;border-radius:13px;padding:13px 15px;font-size:12px;line-height:1.6;color:#547463;margin:12px 0}.warning{background:#fff2e9;color:#855a44}.empty{padding:25px;text-align:center;color:var(--muted);font-size:13px;line-height:1.7}.section{margin-bottom:17px}.kpi{font:normal 31px Georgia,serif;color:var(--dark)}.muted-line{color:var(--muted);font-size:12px;line-height:1.65}.actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.card-pad{padding:18px}.label-line{font-size:12px;font-weight:700;color:var(--ink)}.divider-light{border-bottom:1px solid var(--outline);margin:12px 0}.form-row{display:grid;gap:8px}.field textarea{min-height:86px}.field input[type=checkbox]{width:auto}.chips{display:flex;flex-wrap:wrap;gap:6px}.day-toggle{background:#eef4ef;color:#506e60;border-radius:8px;padding:7px 10px;border:1px solid #dbe7db;font-size:12px}.day-toggle.active{background:var(--dark);color:#fff}.big-stat{font:normal 32px Georgia,serif}.seg-buttons{display:flex;gap:6px;flex-wrap:wrap}.seg-buttons button{border:1px solid var(--outline);border-radius:10px;padding:8px 11px;background:#fff;color:#5b7164;font-size:12px;font-weight:650}.seg-buttons button.selected{background:#e3eee7;border-color:#b9d5c2;color:#315b47}.results-list{display:grid;gap:9px}.list-card{padding:14px;border:1px solid var(--outline);border-radius:13px;background:#fff}.list-card h4{font-size:13px;margin:0 0 5px}.list-card p{font-size:12px;color:var(--muted);margin:0 0 7px;line-height:1.5}.mini-chart{height:120px;display:flex;align-items:end;gap:6px;padding:10px 0;border-bottom:1px solid var(--outline)}.mini-chart div{flex:1;background:#90b8a0;border-radius:5px 5px 0 0;min-width:8px}.privacy-box{border-left:3px solid #79a88b;background:#f5f8f4;padding:12px 14px;font-size:12px;line-height:1.6}.modal .field{margin:7px 0}.highlight{background:#eaf3e9;border-radius:10px;padding:8px 11px;color:#476a54;font-size:12px}.banner-alert{background:#fff0ed;color:#964d45;border:1px solid #f5dbd3;padding:13px;border-radius:12px;font-size:12px;line-height:1.6}.voice-note{color:var(--muted);font-size:10px}.chat-response-action{display:flex;gap:7px;margin:5px 0 10px;align-self:flex-start}@media(max-width:650px){.actions .btn{flex:0 1 auto}.card-pad{padding:15px}.mini-chart{height:95px}}html.dark .notice,html.dark .privacy-box,html.dark .seg-buttons button,html.dark .list-card{background:#22392d;color:#c6e0cd;border-color:#355441}html.dark .seg-buttons button.selected{background:#335942}html.dark .warning,html.dark .banner-alert{background:#50392c;color:#f4d2ba}
+/* Version 5 · warm rose, orchid and pearl redesign. This is UI-only; data remains on-device. */
+:root{--ink:#423047;--muted:#8a7689;--cream:#fcf7fa;--white:#fff;--dark:#744a79;--accent:#f4e5f0;--lav:#f3eafa;--peach:#fff1ee;--blue:#f0edfc;--outline:#efdfec;--shadow:0 14px 36px rgba(100,45,93,.065);background:var(--cream);color:var(--ink)}
+body{background:var(--cream)}
+.page-title,.brand-text{color:var(--dark)}
+.subtitle,.eyebrow,.card-caption,.muted-line{color:var(--muted)}
+.hero{background:linear-gradient(118deg,#fbe4ee 0%,#f0e5f7 56%,#e6daf2 100%)}
+.hero:before{border-color:rgba(125,67,125,.13);box-shadow:0 0 0 52px rgba(255,255,255,.13),0 0 0 105px rgba(255,255,255,.09)}
+.hero:after{content:'❀';color:rgba(126,70,126,.17)}
+.hero p{color:#866b86}.hero h2{color:#673d6c}
+.hero-btn,.brand-mark{background:#744a79;color:#fff7fd}
+.card,.stat,.list-card{border-color:#f2e6ee;box-shadow:var(--shadow)}
+.nav-item{color:#8d778a}.nav-item.active{background:#f5e6f1;color:#744a79}
+.nav-item:hover:not(.active){background:#f9ecf5}
+.private-note,.privacy-box{background:#fff0f6;border-color:#c88fb4;color:#7a5579}
+.avatar{background:#f1deed;color:#945781}
+.task{border-bottom-color:#f4eaf0}.task-desc,.task-time,.stat small,.stat-top{color:#988798}
+.task-name.complete{color:#b8a6b5}
+.task .check{border-color:#dcc4d9}.task .check.done{background:#a469a4;border-color:#a469a4}
+.progress-line i,.mini-chart div{background:#b67fb0}
+.btn.primary,.chat-compose button{background:#744a79;border-color:#744a79;color:#fff}
+.seg-buttons button{background:#fff;border-color:#ebdbe9;color:#785a78}
+.seg-buttons button.selected{background:#f4e2f0;border-color:#dcb5d7;color:#714274}
+.day-toggle{background:#fcf0f8;color:#805e7e;border-color:#ecd6e7}
+.notice{background:#fff1f7;color:#82617b}
+.highlight{background:#fae9f4;color:#845982}
+.small-label{color:#a07a9b}
+:root button:focus-visible,:root input:focus-visible,:root textarea:focus-visible,:root select:focus-visible{outline-color:#d5a1cb}
+/* Four discrete daily checklist cards */
+.period-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.period-card{background:#fffafc;border:1px solid #f1dfee;border-radius:17px;padding:13px 15px;min-width:0}
+.period-card:nth-child(2){background:#fff9f6;border-color:#f2e3e0}
+.period-card:nth-child(3){background:#faf6ff;border-color:#e8def5}
+.period-card:nth-child(4){background:#fdf7fc;border-color:#eee0ef}
+.period-head{display:flex;gap:10px;align-items:center;padding:0 0 10px;border-bottom:1px solid #f0e4ee}
+.period-head h4{margin:0;font:600 15px/1.1 Georgia,serif;color:#674567}
+.period-head small{color:#a28ea0;font-size:10px}
+.period-icon{font-size:21px;color:#a76ba1;background:#f6e7f1;border-radius:12px;width:35px;height:35px;display:grid;place-items:center}
+.period-card .task{padding:10px 0;gap:8px}.period-card .task-name{font-size:12px}.period-card .task-desc{white-space:normal;overflow:visible;text-overflow:initial;font-size:10px}.period-card .task-time{font-size:10px}.period-card .more-btn{padding:4px}
+/* Home check-in */
+.checkin-toggle{margin-bottom:12px}.quick-check-form{display:grid;gap:13px}.quick-check-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.quick-check-grid .field{margin:0}.quick-check-form textarea{min-height:52px}.quick-check-form .row{gap:15px;flex-wrap:wrap}.quick-check-form .field{font-size:11px}
+/* Food: inspiration, one entry form, and actual diary inside each single meal card */
+.meal-board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-bottom:17px}
+.meal-card{padding:20px}.meal-card-header{display:flex;justify-content:space-between;align-items:start;gap:9px;margin-bottom:16px}
+.meal-card-header h3{font:normal 25px Georgia,serif;color:#6f4778;margin:4px 0 0}.meal-kicker{font-size:10px;font-weight:750;letter-spacing:1.7px;color:#b28eae}.meal-count{font-size:10px;background:#f9ebf4;color:#875f83;border-radius:30px;padding:7px 10px;white-space:nowrap}
+.meal-inspo{background:#fcf5fa;padding:12px;border-radius:14px;margin-bottom:14px}.meal-options{display:grid;gap:7px;margin-top:9px}.meal-suggestion{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;text-align:left;border:1px solid #eddce9;background:#fff;color:#6e5769;border-radius:10px;padding:10px 12px;font-size:12px;font-weight:550;line-height:1.3}.meal-suggestion span{font-size:18px;color:#a56f9e}.meal-suggestion:active{background:#f8e8f2}.inline-meal-form{display:grid;gap:10px}.meal-input-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.meal-input-row .field{min-width:0}.meal-save-btn{justify-self:start}.meal-logged{margin-top:16px;border-top:1px solid #f0e2ec;padding-top:13px}.meal-logged .small-label{margin-bottom:8px}.logged-entry{display:flex;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid #f2e9f0}.logged-entry:last-child{border-bottom:0}.logged-entry>div:first-child{flex:1;min-width:0}.logged-entry strong{display:block;color:#694769;font-size:12px}.logged-entry span{display:block;font-size:11px;color:#a18da0;margin-top:2px}.logged-entry .icon-btn{width:29px;height:29px}
+/* Fitness weekday layout, independent of displayed dates */
+.week-navigation{margin-bottom:16px;gap:10px;flex-wrap:wrap}.week-pill{font-size:11px;padding:9px 12px;background:#f7eaf3;border-radius:22px;color:#845782;font-weight:750}
+.fitness-week-list{display:grid;gap:10px}.weekday-card{border:1px solid #eedfec;background:#fffafd;border-radius:15px;padding:13px 15px;min-width:0}
+.weekday-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;gap:8px}.weekday-name{display:flex;align-items:center;gap:9px}.weekday-name strong{font:600 16px Georgia,serif;color:#744c76}.weekday-bubble{width:30px;height:30px;display:grid;place-items:center;background:#f3dfee;color:#8d5c8f;border-radius:11px;font-weight:750}.swap-button{background:#fff8fc;color:#86598b;border-color:#e9d8e9}
+.weekday-activity{display:flex;align-items:center;gap:9px;border-top:1px solid #f0e5ec;padding:10px 0 2px}.weekday-activity>div{flex:1;min-width:0}.weekday-activity strong{display:block;font-size:12px;color:#654d67}.weekday-activity span:not(.activity-symbol){display:block;font-size:11px;color:#9d879a;margin-top:2px}.activity-symbol{background:#f3e7f2;color:#9b6994;width:29px;height:29px;border-radius:10px;display:grid;place-items:center}.weekday-activity.badminton .activity-symbol{background:#fae8ed;color:#b6728c}.weekday-activity.music .activity-symbol{background:#f2e8ff;color:#8e76bb}.weekday-activity .btn{font-size:10px}.day-sessions{margin-top:9px;padding:0 10px;background:#f9f1f7;border-radius:11px}
+/* dark palette */
+html.dark{--ink:#f5e5f1;--muted:#c4a9bf;--cream:#211923;--white:#2b202f;--dark:#e4b2db;--accent:#553c55;--outline:#503750;background:var(--cream);color:var(--ink)}
+html.dark body{background:var(--cream)}html.dark .card,html.dark .stat,html.dark .modal,html.dark .chat-shell,html.dark .icon-btn{background:#2b202f;border-color:#4d384d}
+html.dark .hero{background:linear-gradient(120deg,#4c304b,#413451)}html.dark .hero h2,html.dark .hero p{color:#f2dce9}
+html.dark .period-card,html.dark .weekday-card,html.dark .meal-card{background:#312536;border-color:#564158}html.dark .period-head,html.dark .weekday-activity{border-color:#4b354b}
+html.dark .period-head h4,html.dark .weekday-name strong,html.dark .weekday-activity strong,html.dark .meal-card-header h3,html.dark .logged-entry strong{color:#eed3e8}
+html.dark .meal-inspo,html.dark .meal-suggestion,html.dark .day-sessions{background:#3b2a3c;color:#f3dff0;border-color:#614760}
+html.dark .seg-buttons button.selected,html.dark .week-pill{background:#5c3c57;color:#f4dff1;border-color:#745473}
+html.dark .bottom-nav{background:#2b202f;border-color:#4d384d}html.dark .bottom-nav button.active{color:#ecc4e7}
+@media(max-width:920px){.period-grid{grid-template-columns:1fr}}
+@media(max-width:800px){.bottom-nav{background:#fffafd;border-color:#f0e3ef}.bottom-nav button.active{color:#914c90}.meal-board{grid-template-columns:1fr}.period-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:570px){.period-grid{grid-template-columns:1fr}.quick-check-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.meal-card{padding:17px}.meal-input-row{grid-template-columns:1fr 1fr}.weekday-activity{flex-wrap:wrap}.weekday-activity .btn{padding:8px 10px}.hero-copy{max-width:82%}}
